@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Light Control</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .response {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ESP32 Light Control</h1>
+    <p>Enter the number of times the light should blink:</p>
+    <input type="number" id="blinkCount" min="1" placeholder="Enter a number" />
+    <br>
+    <button id="sendButton">Send Command</button>
+    <div class="response" id="response"></div>
+
+    <script>script.js</script>
+</body>
+</html>
