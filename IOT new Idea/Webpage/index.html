@@ -3,31 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Localhost</title>
+    <title>ESP32 Controller</title>
 </head>
 <body>
-    <h1>Send Data to Localhost Server</h1>
-    <button id="sendButton">Send Data</button>
+    <h1>Control ESP32 Light</h1>
+    <button id="turnOn">Turn ON Light</button>
+    <button id="turnOff">Turn OFF Light</button>
+    <h1>Fetch Weather</h1>
+    <button id="getWeather">Get Weather</button>
+    <div id="weatherResult"></div>
 
-    <script>
-        document.getElementById("sendButton").addEventListener("click", async () => {
-            try {
-                const response = await fetch("http://127.0.0.1:5000/send-data", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({ message: "Hello from Localhost!" }),
-                });
-
-                const result = await response.json();
-                console.log("Server Response:", result);
-                alert(`Response: ${result.message}`);
-            } catch (error) {
-                console.error("Error:", error);
-                alert("Failed to send data to the server.");
-            }
-        });
-    </script>
+    <script>scr="script.js"</script>
 </body>
+
 </html>
