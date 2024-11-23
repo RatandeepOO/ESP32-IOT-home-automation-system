@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESP32 Controller</title>
+    <title>ESP32 Personal Assistant</title>
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+            color: #61dafb;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #333;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+        button {
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #61dafb;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
-<body>
-    <h1>Control ESP32 Light</h1>
-    <button id="turnOn">Turn ON Light</button>
-    <button id="turnOff">Turn OFF Light</button>
-    <h1>Fetch Weather</h1>
-    <button id="getWeather">Get Weather</button>
-    <div id="weatherResult"></div>
 
+<body>
+    <div class="container">
+        <h1>ESP32 Personal Assistant</h1>
+        <button id="turnOn1">Turn On Light 1</button>
+        <button id="turnOff1">Turn Off Light 1</button>
+        <button id="turnOn2">Turn On Light 2</button>
+        <button id="turnOff2">Turn Off Light 2</button>
+        <button id="turnOn3">Turn On Light 3</button>
+        <button id="turnOff3">Turn Off Light 3</button>
+        <button id="fanOn">Turn On Fan</button>
+        <button id="fanOff">Turn Off Fan</button>
+        <button id="getWeather">Get Weather</button>
+        <button id="getNews">Get News</button>
+    </div>
     <script src="script.js"></script>
 </body>
 
